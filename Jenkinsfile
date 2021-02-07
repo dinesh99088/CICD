@@ -30,7 +30,7 @@ pipeline {
 
     stage('Artifacts') {
       steps {
-        archiveArtifacts(artifacts: '*jar', allowEmptyArchive: true, caseSensitive: true, followSymlinks: true, onlyIfSuccessful: true, defaultExcludes: true, fingerprint: true)
+        archiveArtifacts(artifacts: 'target/*jar', allowEmptyArchive: true, caseSensitive: true, followSymlinks: true, onlyIfSuccessful: true, defaultExcludes: true, fingerprint: true)
       }
     }
 
